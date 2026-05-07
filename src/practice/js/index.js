@@ -27,7 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
             </li>`
           const fragment = createElements(htmlElement);
           characterElement.appendChild(fragment);
-        }).catch((massage) =>{
+        }).catch((message) =>{
           characterElement.after(createErrorElement(message));
         });
       }).catch((message) => {
