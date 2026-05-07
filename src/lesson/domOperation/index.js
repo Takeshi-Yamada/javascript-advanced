@@ -8,7 +8,6 @@ const cards = document.querySelectorAll('.card-type');
 
 button.addEventListener('click', ()=>{
   title.classList.add('animate__hinge');
-  console.log(cards);
   setTimeout(() => {
     title.classList.remove('animate__hinge');
     cards.forEach(card => {
