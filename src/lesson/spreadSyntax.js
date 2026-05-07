@@ -4,19 +4,13 @@
 
 
 
-
-
-
-
-
-
-
 // 練習問題
 // 問題 1
 const packageManager = ['npm', 'yarn', 'pnpm'];
 
 function arrayFn(array) {
   const framework = ['Vue', 'React', 'Svelte'];
+  return [...array, ...framework];
 }
 
 console.log(arrayFn(packageManager));
@@ -32,4 +26,4 @@ const objectB = {
   version: 3,
 };
 
-console.log();
+console.log({...objectA, ...objectB, routingLibrary: 'Vue Router'});
