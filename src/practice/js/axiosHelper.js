@@ -12,6 +12,7 @@ export const $axios = (requestUrl) => {
     }).catch(error => {
       switch (error.response && error.response.status) {
         case 404:
+          console.log(error);
           reject(error.message);
           break;
         default:
